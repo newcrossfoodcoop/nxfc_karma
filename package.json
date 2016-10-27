@@ -1,0 +1,30 @@
+{
+  "name": "nxfc_karma",
+  "version": "0.0.1",
+  "description": "Karma container for drone",
+  "main": "gulp",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bsimpson53@github.com/newcrossfoodcoop/nxfc_karma.git"
+  },
+  "author": "bsimpson53",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newcrossfoodcoop/nxfc_karma/issues"
+  },
+  "homepage": "https://github.com/newcrossfoodcoop/nxfc_karma#readme",
+  "dependencies": {
+    "get-gulp-args": "0.0.1",
+    "gulp": "^3.9.1",
+    "istanbul": "^0.4.5",
+    "karma": "^1.3.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "minimatch": "^3.0.3"
+  }
+}

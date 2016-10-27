@@ -1,0 +1,37 @@
+cache:
+  mount:
+    - node_modules
+    - .git
+
+build:
+  main:
+    image: node:4.6-slim
+    commands:
+      - apt-get update
+      - apt-get install -y libfontconfig libfreetype6 bzip2
+      - npm install -g gulp
+      - npm install
+      - gulp test
+
+notify:
+  gitter:
+    webhook: https://webhooks.gitter.im/e/$${GITTER_ID}
+
+publish:
+  docker:
+    username: bsimpson53
+    email: $$DOCKER_EMAIL
+    password: $$DOCKER_PASSWORD
+    repo: newcrossfoodcoop/nxfc_karma
+    tag: latest
+    when:
+      branch: master
+      
+  docker:
+    username: bsimpson53
+    email: $$DOCKER_EMAIL
+    password: $$DOCKER_PASSWORD
+    repo: newcrossfoodcoop/nxfc_karma
+    tag: $$TAG
+    when:
+      event: tag
