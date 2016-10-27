@@ -1,6 +1,6 @@
 {
   "name": "nxfc_karma",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Karma container for drone",
   "main": "gulp",
   "scripts": {
